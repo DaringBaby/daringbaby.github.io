@@ -1,0 +1,85 @@
+body {
+    background-color: #000;
+    font-family: Consolas;
+}
+
+.textbox {
+  border: 48px solid transparent;
+  border-image-source: url('img/border.png');
+  border-image-slice: 16 fill;
+  border-image-width: 48px;
+  border-image-repeat: repeat;
+  image-rendering: pixelated;
+  padding: 8px 10px;
+  color: #fff;
+  background-color: #1a1a24;
+}
+
+.tbsmall {
+    padding: 0 !important;
+    height: 1%;
+}
+
+.avatar-frame {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid #4432a4;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+#face {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+h1 {
+    font-size: 40pt;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 28pt;
+}
+
+.subtitle {
+    font-size: 18pt;
+    font-style: italic;
+    margin-top: -24px;
+}
+.social {
+    width: 48px;
+    height: 48px;
+    opacity: 50%;
+    transition: opacity 1s;
+    border-radius: 48px;
+    margin-bottom: 16px;
+}
+
+.social:hover {
+    opacity: 100%;
+}
+
+.footer {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.menu-item {
+    margin: auto;
+    color: white;
+    font-style: italic;
+}
