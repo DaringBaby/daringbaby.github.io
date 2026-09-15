@@ -20,7 +20,7 @@ body {
   display: inline-block;
   line-height: 0;
   padding: 0;
-  margin: 16px; /* Spazio esterno per non far sbordare la cornice */
+  margin: 16px;
 }
 
 .textbox-img img {
@@ -31,7 +31,6 @@ body {
 .textbox-img::after {
   content: "";
   position: absolute;
-  /* Regola questo valore: avvicina o allontana la linea viola dal gioco */
   inset: -24px;
 
   border: 48px solid transparent;
