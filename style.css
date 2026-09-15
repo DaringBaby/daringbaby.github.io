@@ -12,12 +12,40 @@ body {
   image-rendering: pixelated;
   padding: 8px 10px;
   color: #fff;
-  background-color: #1a1a24;
+  background-color: #000;
 }
+
+.textbox-img {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  padding: 0;
+  margin: 16px; /* Spazio esterno per non far sbordare la cornice */
+}
+
+.textbox-img img {
+  display: block;
+  image-rendering: pixelated;
+}
+
+.textbox-img::after {
+  content: "";
+  position: absolute;
+  /* Regola questo valore: avvicina o allontana la linea viola dal gioco */
+  inset: -24px;
+
+  border: 48px solid transparent;
+  border-image-source: url('img/border.png');
+  border-image-slice: 16;
+  border-image-width: 48px;
+  border-image-repeat: repeat;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
 
 .tbsmall {
     padding: 0 !important;
-    height: 1%;
 }
 
 .avatar-frame {
@@ -80,6 +108,59 @@ h2 {
 
 .menu-item {
     margin: auto;
-    color: white;
+    color: #aaa;;
     font-style: italic;
+}
+
+
+.menu-active {
+    color: #fff;
+}
+
+.menu-active::before {
+    content: "▶ ";
+    display: inline-block;
+    margin-right: 8px;
+    color: #ffffff;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+.arrow-slide {
+    margin: 32px;
+}
+
+
+.titlebox {
+    border: 48px solid transparent;
+    border-image-source: url('img/title-border.png');
+    border-image-slice: 16 fill;
+    border-image-width: 48px;
+    border-image-repeat: repeat;
+    image-rendering: pixelated;
+    color: #fff;
+    background-color: #222;
+    margin-bottom: -64px;
+}
+h3 {
+    font-size: 24pt;
+    margin-top: -16px;
+}
+
+.desc {
+    font-size: 14pt;
+}
+
+.desc a {
+    color: palevioletred;
+    font-weight: bold;
+    text-decoration: none;
 }

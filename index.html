@@ -1,5 +1,6 @@
 <html>
-    <head><link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <table height="100%" width="100%">
@@ -14,7 +15,7 @@
                 <table width="100%">
                     <tr>
                         <td width="25%" align="center">
-                            <h2 class="menu-item">My Projects</h2>
+                            <h2 class="menu-item menu-active">My Projects</h2>
                         </td>
                         <td width="25%" align="center">
                             <h2 class="menu-item">About me</h2>
@@ -29,7 +30,34 @@
                 </table>
             </td>
         </tr>
-        <tr><td class="textbox" height="100%" rowspan="3">Content</td></tr>
+        <tr><td class="textbox" height="100%" rowspan="3">
+
+            <section class="view active">
+                <table width="100%">
+                    <tr>
+                        <td align="center">
+                <img src="img/gui/arrow-up.png" class="arrow-slide" id="arrow-up"><br>
+                <div class="textbox-img">
+                <img src="img/projects/lithos.png" id="slide-img">
+                </div>
+                <br>
+                <img src="img/gui/arrow-down.png" class="arrow-slide" id="arrow-down">
+                        </td>
+                        <td align="left" width="40%">
+                            <div class="titlebox"><h3 align="center">Tales of Lithos</h3></div>
+                            <div class="textbox"><p class="desc">
+                                Tales of Lithos è un videogioco di ruolo roguelite a turni
+                                per Nintendo Game Boy. Ho sviluppato questo videogioco
+                                come tesi sperimentale di laurea studiando gli algoritmi
+                                di generazione procedurale e la loro applicazione su piattaforme
+                                con specifiche hardware limitate. <br>
+                                <a href="https://daring01.itch.io/tales-of-lithos">Clicca qui per saperne di più.</a></p></div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        </td></tr>
         <tr>
             <td class="textbox" align="center"><h2>My socials</h2>
             <img src="img/github.png" class="social"> <img src="img/fb.png" class="social"> <img src="img/linkedin.png" class="social"><br>
@@ -44,5 +72,6 @@
             </td>
         </tr>
         </table>
+    <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
