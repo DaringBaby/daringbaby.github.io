@@ -133,6 +133,12 @@ h2 {
     display: block;
 }
 
+
+
+.hidden {
+    display: none;
+}
+
 .arrow-slide {
     margin: 32px;
 }
