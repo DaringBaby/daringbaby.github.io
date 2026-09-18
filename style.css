@@ -107,7 +107,7 @@ h2 {
 
 .menu-item {
     margin: auto;
-    color: #aaa;;
+    color: #aaa;
     font-style: italic;
 }
 
@@ -167,5 +167,12 @@ h3 {
 .desc a {
     color: palevioletred;
     font-weight: bold;
+}
+
+h2 a {
+    color: #aaa;
+}
+
+a {
     text-decoration: none;
 }

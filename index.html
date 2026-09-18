@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <title>DaringBaby Portfolio</title>
     </head>
     <body>
         <table height="100%" width="100%">
@@ -15,10 +17,10 @@
                 <table width="100%">
                     <tr>
                         <td width="25%" align="center">
-                            <h2 class="menu-item menu-active">My Projects</h2>
+                            <a href="#"><h2 class="menu-item menu-active" id="projects-menu">My Projects</h2></a>
                         </td>
                         <td width="25%" align="center">
-                            <h2 class="menu-item">About me</h2>
+                            <a href="#"><h2 class="menu-item" id="aboutme-menu">About me</h2></a>
                         </td>
                         <td width="25%" align="center">
                             <h2 class="menu-item">Daring Games</h2>
@@ -31,8 +33,7 @@
             </td>
         </tr>
         <tr><td class="textbox" height="100%" rowspan="3">
-
-            <section class="view active">
+            <section class="view active" id="projects">
                 <table width="100%">
                     <tr>
                         <td align="center">
@@ -96,7 +97,34 @@
                     </tr>
                 </table>
             </section>
-
+            <section class="view" id="aboutme">
+                <table width="100%" height="100%">
+                    <tr>
+                        <td rowspan="2" width="60%">
+                            <div class="titlebox" align="center" style="width: 532px" height="100%"><h3>About me</h3></div>
+                            <div class="textbox" style="width: 512px"><br><p class="desc">Sono <b>Giacomo Doria</b> (DaringBaby), software developer e perito informatico con una laurea in Informatica e TPS.   Sviluppo software spaziando dalla programmazione orientata agli oggetti (C++, C#, Java) e web fino al codice a basso livello (come lo sviluppo per piattaforme retrò come il <b>Game Boy</b>). L'esperienza su hardware a risorse critiche mi ha dato un approccio rigoroso all'ottimizzazione: tra i miei progetti principali ho realizzato in C un algoritmo di generazione procedurale per Nintendo Game Boy (<b>Tales of Lithos</b>).   Sotto l'etichetta <b>Daring Games</b> curo la progettazione e la pubblicazione di videogiochi indipendenti realizzati con Godot Engine, spaziando da prototipi per game jam a titoli più articolati come <b>Astral Hunter</b>.  </p><br><br></div>
+                        </td>
+                        <td>
+                            <div class="titlebox" align="center"><h3>Skills</h3></div>
+                            <div class="textbox">
+                                <ul>
+                                    <li><b>Linguaggi</b>: C, C++, C#, Java, Python</li>
+                                    <li><b>Web</b>: HTML, PHP, CSS, JS</li>
+                                    <li><b>Database</b>: MySQL, Firebase</li>
+                                    <li><b>GameDev</b>: Godot, gbdk2020</li>
+                                    <li><b>Editing</b>: Photoshop, CapCut</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="titlebox" align="center"><h3>Hobbies</h3></div>
+                            <div class="textbox">Nel tempo libero mi dedico allo sviluppo di videogiochi indipendenti, al retro-computing e a progetti su console storiche. Oltre alla programmazione, sperimento con la grafica digitale, il disegno e l'editing video per dare forma completa ai progetti personali.</div>
+                        </td>
+                    </tr>
+                </table>
+                </section>
         </td></tr>
         <tr>
             <td>
