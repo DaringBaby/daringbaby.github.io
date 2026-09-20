@@ -15,6 +15,10 @@ body {
   background-color: #000;
 }
 
+.textbox label {
+    color: #fff;
+}
+
 .textbox-img {
   position: relative;
   display: inline-block;
@@ -80,6 +84,7 @@ h1 {
 
 h2 {
     font-size: 28pt;
+    transition: color 0.3s;
 }
 
 .subtitle {
@@ -91,7 +96,7 @@ h2 {
     width: 48px;
     height: 48px;
     opacity: 50%;
-    transition: opacity 1s;
+    transition: opacity 0.3s;
     border-radius: 48px;
     margin-bottom: 16px;
 }
@@ -141,8 +146,13 @@ h2 {
 
 .arrow-slide {
     margin: 32px;
+    opacity: 50%;
+    transition: opacity 0.2s;
 }
 
+.arrow-slide:hover {
+    opacity: 100%;
+}
 
 .titlebox {
     border: 48px solid transparent;
@@ -169,10 +179,45 @@ h3 {
     font-weight: bold;
 }
 
+.cv a {
+    color: palevioletred;
+    font-weight: bold;
+}
+
 h2 a {
     color: #aaa;
 }
 
+h2:hover {
+    color: #fff;
+}
+
 a {
     text-decoration: none;
+}
+
+input, textarea {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: #fff;
+}
+
+button {
+    background-color: mediumpurple;
+    transition: background-color 0.2s;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+    height: 64px;
+    width: 256px;
+    margin-left: auto;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: Consolas;
+}
+
+button:hover {
+    background-color: rebeccapurple;
 }
