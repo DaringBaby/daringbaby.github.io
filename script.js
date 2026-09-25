@@ -6,10 +6,12 @@ const arrowdown = document.querySelector('#arrow-down');
 
 const projects_menu = document.querySelector('#projects-menu');
 const aboutme_menu = document.querySelector('#aboutme-menu');
-const contact_menu = document.querySelector('#contact-menu')
+const daring_menu = document.querySelector('#daring-menu');
+const contact_menu = document.querySelector('#contact-menu');
 
 const projects_section = document.getElementById('projects');
 const aboutme_section = document.getElementById('aboutme');
+const daring_section = document.getElementById('daring');
 const contact_section = document.getElementById('contact');
 
 const slides = [
@@ -62,30 +64,51 @@ contact_menu.addEventListener('click', (e) => {
   changeView(3);
 });
 
+daring_menu.addEventListener('click', (e) => {
+  e.preventDefault();
+  changeView(2);
+});
+
 function changeView(view) {
   switch (view) {
     case 0:
       projects_menu.classList.add('menu-active');
       aboutme_menu.classList.remove('menu-active');
-      contact_menu.classList.remove('menu-active')
+      daring_menu.classList.remove('menu-active');
+      contact_menu.classList.remove('menu-active');
       projects_section.classList.add('active');
       aboutme_section.classList.remove('active');
-      contact_section.classList.remove('active')
+      daring_section.classList.remove('active');
+      contact_section.classList.remove('active');
       break;
     case 1:
       projects_menu.classList.remove('menu-active');
       aboutme_menu.classList.add('menu-active');
+      daring_menu.classList.remove('menu-active');
       contact_menu.classList.remove('menu-active')
       projects_section.classList.remove('active');
       aboutme_section.classList.add('active');
+      daring_section.classList.remove('active');
+      contact_section.classList.remove('active');
+      break;
+    case 2:
+      projects_menu.classList.remove('menu-active');
+      aboutme_menu.classList.remove('menu-active');
+      daring_menu.classList.add('menu-active');
+      contact_menu.classList.remove('menu-active')
+      projects_section.classList.remove('active');
+      aboutme_section.classList.remove('active');
+      daring_section.classList.add('active');
       contact_section.classList.remove('active');
       break;
     case 3:
       projects_menu.classList.remove('menu-active');
       aboutme_menu.classList.remove('menu-active');
+      daring_menu.classList.remove('menu-active');
       contact_menu.classList.add('menu-active')
       projects_section.classList.remove('active');
       aboutme_section.classList.remove('active');
+      daring_section.classList.remove('active');
       contact_section.classList.add('active');
   }
 }
